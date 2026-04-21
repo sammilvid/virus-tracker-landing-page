@@ -1,14 +1,15 @@
-# Vitrack Landing Page
+# Vitrack Presentation Website
 
-This is a static landing page for a school assignment. It is designed to work well on GitHub Pages, which is why the project uses plain `HTML`, `CSS`, and `JavaScript` instead of a heavier setup.
+This project is a static presentation website for the Vitrack class assignment. It keeps the original hero section and turns the rest of the page into full-screen presentation sections.
 
 ## What is included
 
-- A strong headline and value proposition
-- Clear sections for the problem, the solution, and why the idea is different
-- A mobile-friendly layout
-- A polished email waitlist form
-- A dashboard-style hero inspired by your reference images
+- A presentation-style hero cover slide
+- Section 1: introduction and brand overview
+- Section 2: competitive landscape
+- Section 3: customer value proposition, persona, and customer segment
+- Section 4: media and communications with shortened messaging, sample concepts, and a full PNG gallery
+- A conclusion slide instead of the old waitlist form
 
 ## How to Run This
 
@@ -30,22 +31,17 @@ Then open:
 http://localhost:8000
 ```
 
-## How to host it on GitHub Pages
-
-1. Upload these files to a GitHub repository.
-2. In GitHub, open `Settings > Pages`.
-3. Set the source to your main branch and the root folder.
-4. Save the settings and wait for GitHub Pages to publish the site.
-
 ## Important beginner note
 
-GitHub Pages can host static files, but it cannot store submitted emails by itself. Right now the form validates the email, shows a success message, and saves it in that browser only.
+This project is just HTML, CSS, and JavaScript, so it works well on GitHub Pages without extra setup.
 
-If you want real email collection later, use a free form service like Formspree:
+If you want to swap the current presentation images in Section 4 later, replace the image files in the HTML and adjust the gallery styles in `styles.css`.
 
-1. Create a Formspree form.
-2. Copy your Formspree endpoint URL.
-3. Open `script.js`.
-4. Paste the URL into the `FORMSPREE_ENDPOINT` constant.
+## What success looks like
 
-After that, the form can send real submissions while still being hosted on GitHub Pages.
+When the page is working correctly:
+
+- the hero stays at the top as the opening slide
+- each assignment section fills the screen more like a presentation than a sales page
+- there is no waitlist form at the bottom
+- the media section ends with a gallery that shows every PNG in the project folder
